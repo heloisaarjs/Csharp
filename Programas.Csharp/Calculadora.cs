@@ -7,5 +7,8 @@
             Console.WriteLine("4 - Divisão\n");
 
             Console.ReadLine();
+
+            int operacao = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o primeiro numero: ")
         }
     }
