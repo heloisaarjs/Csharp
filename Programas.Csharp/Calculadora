@@ -1,0 +1,93 @@
+/******************************************************************************
+
+                            Online C# Compiler.
+                Code, Compile, Run and Debug C# program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+using System;
+class HelloWorld {
+  static void Main() {
+
+            Console.ReadLine();
+            float n1,n2;
+            string operador;
+            Console.WriteLine("Digite o primeiro numero: ");
+            n1 = float.Parse(Console.ReadLine());
+             Console.WriteLine("Digite o operador: ");
+            operador = Console.ReadLine();
+            Console.WriteLine("Digite o segundo numero: ");
+            n2 = float.Parse(Console.ReadLine());
+            Console.WriteLine("");
+
+            switch (operador)
+            {
+                case "+":
+                    Soma(n1, n2);
+                    break;
+
+                case "-":
+                    Subtracao(n1, n2);
+                    break;
+
+                case "*":
+                    Multiplicacao(n1, n2);
+                    break;
+
+                case "/":
+                    Divisao(n1, n2);
+                    break;
+
+                case "%":
+                    Resto(n1, n2);
+                    break;
+
+                default:
+                    Console.WriteLine("Opção inexistente!");
+                    Console.ReadKey();
+            
+                    break;
+
+            }
+        }
+
+        static void Soma(float n1, float n2)
+        {
+            float resultado = n1 + n2;
+            Console.WriteLine($"O resultado da soma de {n1} + {n2}, é igual a {resultado}");
+            Console.ReadKey();
+            
+        }
+        static void Subtracao(float n1, float n2)
+        {
+            float resultado = n1 - n2;
+            Console.WriteLine($"O resultado da Subtração de {n1} - {n2}, é igual a {resultado}");
+            Console.ReadKey();
+            
+        }
+        static void Multiplicacao(float n1, float n2)
+        {
+            float resultado = n1 * n2;
+            Console.WriteLine($"O resultado da Multiplicação de {n1} * {n2}, é igual a {resultado}");
+            Console.ReadKey();
+            
+        }
+        static void Divisao(float n1, float n2)
+        {
+            float resultado = n1 / n2;
+            Console.WriteLine($"O resultado da Divisão de {n1} / {n2}, é igual a {resultado}");
+            Console.ReadKey();
+            
+        }
+        static void Resto(float n1, float n2)
+        {
+            float resultado = n1 % n2;
+            Console.WriteLine($"O resultado da Resto de {n1} e {n2}, é igual a {resultado}");
+            Console.ReadKey();
+            
+        }
+    }
+
+        
+    
